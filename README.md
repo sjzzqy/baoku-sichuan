@@ -1,1 +1,1 @@
-ËÄ´¨º½¿Õ baoku-sichuan-OpenAPI-JAVA-demo
+baoku-sichuan-OpenAPI-JAVA-demo
