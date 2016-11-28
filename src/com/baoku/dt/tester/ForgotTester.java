@@ -13,8 +13,8 @@ public class ForgotTester {
 
 	public static void main(String[] args) {
 		LoginCondition condition = new LoginCondition();
-		condition.setCusBigCode("6BJ001");
-		condition.setUserName("weiyumeng");
+		condition.setCusBigCode("大客户编码");
+		condition.setUserName("用户名");
 		ForgotService service = new ForgotService(condition);
 		System.out.println(service.request());
 	}

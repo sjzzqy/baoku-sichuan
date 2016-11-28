@@ -16,11 +16,11 @@ public class EtdzTester {
 	public static void main(String[] args) {
 
 		EtdzCondition condition = new EtdzCondition();
-		condition.setOrderNo("WF160810000002");
+		condition.setOrderNo("订单号");
 		condition.setAmout(1570d);
-		condition.setBankOrderNo("TEST90930394874");
-		condition.setCusBigCode("6BJ001");
-		condition.setPayOrderNo("TEST90930394875");
+		condition.setBankOrderNo("银行流水号");
+		condition.setCusBigCode("大客户编码");
+		condition.setPayOrderNo("第三方支付交易单号");
 		condition.setPayChannel("alipay");
 		condition.setPayChanmes("支付宝");
 
