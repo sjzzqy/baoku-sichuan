@@ -10,9 +10,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * @Description: TODO(....)
  * @author Allen
- * @version V1.0
  */
 public class Tool {
 
