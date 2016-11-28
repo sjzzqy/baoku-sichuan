@@ -1,0 +1,71 @@
+{
+    "contacts": [
+        {
+            "bsms": true,
+            "email": "123@baoku.com",
+            "name": "联系人",
+            "phone": "138383838383",
+            "remark": "联系人备注",
+            "tsms": false
+        }
+    ],
+    "order": {
+        "cardno": "CA9993123457",
+        "cid": 1231231231231312,
+        "cname": "下单人",
+        "id": "非必填",
+        "lineType": "D",
+        "orderNo": "CF12312312312F",
+        "orderType": "0",
+        "oriOrderNo": "CF23423423",
+        "priceType": "PUB",
+        "remark": "测试订单",
+        "routeType": "RT"
+    },
+    "passengers": [
+        {
+            "bsms": true,
+            "cardno": "C12312",
+            "certNo": "13053319870306663X",
+            "ctype": "身份证",
+            "email": "123@baoku.com",
+            "name": "测试",
+            "phone": "138383838383",
+            "ptype": "ADT",
+            "tsms": true
+        }
+    ],
+    "segments": [
+        {
+            "airCraft": "321",
+            "arrivalDate": "2016-10-25",
+            "arrivalTime": "09:05",
+            "boardAirportName": "首都国际机场",
+            "boardPoint": "PEK",
+            "boardPointName": "北京",
+            "carrier": "CA",
+            "changeRule": "改期规则",
+            "classCode": "Y",
+            "classIndex": "18",
+            "classLevel": "Y",
+            "departureDate": "2016-10-25",
+            "departureTime": "06:50",
+            "flightNo": "3202",
+            "flightTime": "20分钟",
+            "fuelTax": 0,
+            "lowPrice": 1240,
+            "mprice": 1240,
+            "offAirportName": "虹桥机场",
+            "offPoint": "SHA",
+            "offPointName": "上海",
+            "otax": 0,
+            "pnr": "特惠机票 传入参数",
+            "refundRule": "退票规则",
+            "shareCarrier": "CZ",
+            "shareFlight": "9993",
+            "tktTax": 50,
+            "tpm": "2100",
+            "uri": "580755a4e4b0ec0bee064dfb"
+        }
+    ]
+}
