@@ -15,7 +15,7 @@ public class OrderConctatTester {
 
 	public static void main(String[] args) {
 		OrderContactCondition condition = new OrderContactCondition();
-		condition.setPnr("MY68F3");
+		condition.setPnr("PNR");
 		condition.setOrgCity("CTU");
 		condition.setDesCity("PEK");
 		condition.setTakeoffTime("2016-11-30 20:30:00");

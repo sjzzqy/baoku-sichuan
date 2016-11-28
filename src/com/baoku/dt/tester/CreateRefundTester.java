@@ -8,7 +8,12 @@ import com.baoku.dt.model.request.refund.EtrfCondition;
 import com.baoku.dt.model.request.refund.EtrfUids;
 import com.baoku.dt.model.result.refund.RefundResult;
 import com.baoku.dt.service.CreateRefundService;
-
+/**
+ * 申请退票
+ * 
+ * @author Allen
+ * 
+ */
 public class CreateRefundTester {
 
 	/**
@@ -16,7 +21,7 @@ public class CreateRefundTester {
 	 */
 	public static void main(String[] args) {
 		EtrfCondition condition = new EtrfCondition();
-		condition.setOrderNo("WF160810000002");
+		condition.setOrderNo("订单号");
 		EtrfUids uidd = new EtrfUids();
 		Set<String> uids = new HashSet<String>();
 		uids.add("Of%2FU1TpqfxqZ1YbZqxpjNQ%3D%3D");
@@ -28,7 +33,7 @@ public class CreateRefundTester {
 		condition.setEpost(1);
 		condition.setName("张三丰");
 		condition.setPhone("13716890293");
-		condition.setRemarks("APP测试票");
+		condition.setRemarks("测试票");
 		CreateRefundService service = new CreateRefundService(condition);
 		Response<RefundResult> result = service.request();
 		System.out.println(result);

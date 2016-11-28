@@ -15,9 +15,9 @@ public class LoginTester {
 
 	public static void main(String[] args) {
 		LoginCondition condition = new LoginCondition();
-		condition.setCusBigCode("6BJ001");
-		condition.setPassword("scal");
-		condition.setUserName("scal");
+		condition.setCusBigCode("大客户编码");
+		condition.setPassword("密码");
+		condition.setUserName("登录名");
 		// condition.setLoginIp(loginIp);
 		LoginService service = new LoginService(condition);
 		Response<Account> result = service.request();

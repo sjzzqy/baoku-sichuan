@@ -15,7 +15,7 @@ public class AvTester {
 
 	public static void main(String[] args) {
 		AvCondition condition = new AvCondition();
-		condition.setCusBigCode("6BJ001");
+		condition.setCusBigCode("大客户编码");
 		condition.setOrgCity("CTU");
 		condition.setDesCity("PEK");
 		condition.setGoDate("2016-08-30");

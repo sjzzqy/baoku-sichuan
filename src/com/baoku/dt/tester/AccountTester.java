@@ -17,7 +17,7 @@ public class AccountTester {
 	public static void main(String[] args) {
 		try {
 			EmployeeCondition condition = new EmployeeCondition();
-			condition.setCusBigCode("BKSCAL06");
+			condition.setCusBigCode("大客户编码");
 			AccountSevice service = new AccountSevice(condition);
 			Response<Accounts> result = service.request();
 			System.out.println(result);

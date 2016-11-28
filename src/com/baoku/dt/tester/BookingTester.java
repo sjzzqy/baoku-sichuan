@@ -16,7 +16,7 @@ public class BookingTester {
 		BookingCondition condition = new BookingCondition();
 		condition.setOrgCity("CTU");
 		condition.setDesCity("PEK");
-		condition.setCusBigCode("6BJ001");
+		condition.setCusBigCode("大客户编码");
 		condition.setGoDate("2016-08-30");
 		condition.setFlightNo("3U8889");
 		condition.setCno("T");
