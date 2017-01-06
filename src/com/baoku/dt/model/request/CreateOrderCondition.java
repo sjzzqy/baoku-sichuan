@@ -33,6 +33,8 @@ public class CreateOrderCondition {
 	private String bookManUid;
 	@XmlElement(name = "Ftype")
 	private String ftype;// ow单程 rt往返 uw多程
+	@XmlElement(name = "FP")
+	private String fp;
 	@XmlElement(name = "Contacts")
 	private Contacts contacts;// 联系人
 	@XmlElement(name = "Segments")
@@ -113,6 +115,21 @@ public class CreateOrderCondition {
 	 */
 	public void setFtype(String ftype) {
 		this.ftype = ftype;
+	}
+
+	/**
+	 * @return the fp
+	 */
+	public String getFp() {
+		return fp;
+	}
+
+	/**
+	 * @param fp
+	 *            the fp to set
+	 */
+	public void setFp(String fp) {
+		this.fp = fp;
 	}
 
 	/**
