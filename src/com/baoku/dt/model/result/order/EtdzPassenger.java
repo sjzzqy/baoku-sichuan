@@ -23,7 +23,6 @@ public class EtdzPassenger {
 
 	@XmlElement(name = "Name")
 	private String name;
-
 	@XmlElement(name = "Tickets")
 	private Tickets tickets;
 

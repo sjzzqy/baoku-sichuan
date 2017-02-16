@@ -34,7 +34,7 @@ public class CreateOrderCondition {
 	@XmlElement(name = "Ftype")
 	private String ftype;// ow单程 rt往返 uw多程
 	@XmlElement(name = "FP")
-	private String fp;
+	private String fp;// PNR FP项内容
 	@XmlElement(name = "Contacts")
 	private Contacts contacts;// 联系人
 	@XmlElement(name = "Segments")
@@ -118,21 +118,6 @@ public class CreateOrderCondition {
 	}
 
 	/**
-	 * @return the fp
-	 */
-	public String getFp() {
-		return fp;
-	}
-
-	/**
-	 * @param fp
-	 *            the fp to set
-	 */
-	public void setFp(String fp) {
-		this.fp = fp;
-	}
-
-	/**
 	 * @return the contacts
 	 */
 	public Contacts getContacts() {
@@ -175,6 +160,25 @@ public class CreateOrderCondition {
 	 */
 	public void setPassengers(Passengers passengers) {
 		this.passengers = passengers;
+	}
+
+	/**
+	 * fp
+	 * 
+	 * @return the fp
+	 */
+	public String getFp() {
+		return fp;
+	}
+
+	/**
+	 * fp
+	 * 
+	 * @param fp
+	 *            the fp to set
+	 */
+	public void setFp(String fp) {
+		this.fp = fp;
 	}
 
 }

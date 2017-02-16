@@ -19,8 +19,8 @@ public class TicketStatusTester {
 	public static void main(String[] args) {
 		IncrStatusCondition condition = new IncrStatusCondition();
 		Set<String> orders = new HashSet<String>();
-		orders.add("订单号1");
-		orders.add("订单号2");
+		orders.add("CF160830000003");
+		orders.add("WF161010000002");
 		condition.setOrderNo(orders);
 
 		TicketStatusService service = new TicketStatusService(condition);

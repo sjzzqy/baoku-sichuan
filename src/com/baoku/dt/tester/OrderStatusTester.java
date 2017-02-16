@@ -19,9 +19,9 @@ public class OrderStatusTester {
 	public static void main(String[] args) {
 		IncrStatusCondition condition = new IncrStatusCondition();
 		Set<String> orderNo = new HashSet<String>();
-		orderNo.add("订单号1");
-		orderNo.add("订单号2");
-		orderNo.add("订单号3");
+		orderNo.add("WF160812000001");
+		orderNo.add("WF160812000001");
+		orderNo.add("WF160812000002");
 		condition.setOrderNo(orderNo);
 		StatusService service = new StatusService(condition);
 		Response<IncrStatus> result = service.request();

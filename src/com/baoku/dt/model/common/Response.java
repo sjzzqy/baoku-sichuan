@@ -6,19 +6,20 @@
 package com.baoku.dt.model.common;
 
 import java.io.Serializable;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSeeAlso;
-
 import com.baoku.dt.model.result.AvResult;
 import com.baoku.dt.model.result.CreateOrderResult;
 import com.baoku.dt.model.result.account.Account;
 import com.baoku.dt.model.result.account.Accounts;
+import com.baoku.dt.model.result.change.ChangeResult;
+import com.baoku.dt.model.result.comm.ContactQ;
 import com.baoku.dt.model.result.order.EtdzOrder;
 import com.baoku.dt.model.result.order.IncrStatus;
+import com.baoku.dt.model.result.order.TicketStatusResult;
 import com.baoku.dt.model.result.order.OrderResult;
 import com.baoku.dt.model.result.order.StatusResult;
 import com.baoku.dt.model.result.refund.ApplyResult;
@@ -37,10 +38,12 @@ import com.baoku.dt.model.result.refund.Status;
 @XmlSeeAlso({ AvResult.class, Account.class, Accounts.class, Validate.class,
 		CreateOrderResult.class, StatusResult.class, EtdzOrder.class,
 		StatusResult.class, ApplyResult.class, RefundResult.class,
-		Status.class, OrderResult.class, IncrStatus.class })
+		Status.class, OrderResult.class, IncrStatus.class, ContactQ.class,
+		TicketStatusResult.class, ChangeResult.class })
 public class Response<T> implements Serializable {
 
 	private static final long serialVersionUID = 1L;
+
 	@XmlElement(name = "Code")
 	private String code;// 0成功
 	@XmlElement(name = "Message")

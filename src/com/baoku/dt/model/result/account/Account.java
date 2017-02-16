@@ -20,6 +20,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "Account")
 public class Account {
+
 	@XmlElement(name = "UID")
 	private String uid;// 唯一编码
 	@XmlElement(name = "Name")

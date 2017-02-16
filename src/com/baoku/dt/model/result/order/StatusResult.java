@@ -20,12 +20,30 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "Result")
 public class StatusResult {
+
+	@XmlElement(name = "OrderNo")
+	private String orderNo;
 	@XmlElement(name = "AppStatus")
 	private Integer appStatus;
 	@XmlElement(name = "OrderStatus")
 	private Integer orderSatus;
 	@XmlElement(name = "PayStatus")
 	private Integer payStatus;
+
+	/**
+	 * @return the orderNo
+	 */
+	public String getOrderNo() {
+		return orderNo;
+	}
+
+	/**
+	 * @param orderNo
+	 *            the orderNo to set
+	 */
+	public void setOrderNo(String orderNo) {
+		this.orderNo = orderNo;
+	}
 
 	/**
 	 * @return the appStatus

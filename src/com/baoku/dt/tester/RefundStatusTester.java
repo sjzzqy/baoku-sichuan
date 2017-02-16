@@ -15,8 +15,8 @@ public class RefundStatusTester {
 
 	public static void main(String[] args) {
 		OrderCondition condition = new OrderCondition();
-		condition.setOrderNo("退票单单号");
-		condition.setCusBigCode("大客户编码");
+		condition.setOrderNo("R2016081000004");
+		condition.setCusBigCode("6BJ001");
 		RefundStatusService service = new RefundStatusService(condition);
 		Response<Status> result = service.request();
 		System.out.println(result);

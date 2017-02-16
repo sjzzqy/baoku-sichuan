@@ -9,7 +9,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-
 import com.baoku.dt.model.common.CommonSegment;
 
 /**
@@ -40,74 +39,137 @@ public class ApplyItem extends CommonSegment {
 	@XmlElement(name = "TotalRefund")
 	private double totalRefund;// 应退款
 
+	/**
+	 * @return the uid
+	 */
 	public String getUid() {
 		return uid;
 	}
 
+	/**
+	 * @param uid
+	 *            the uid to set
+	 */
 	public void setUid(String uid) {
 		this.uid = uid;
 	}
 
+	/**
+	 * @return the sequence
+	 */
 	public String getSequence() {
 		return sequence;
 	}
 
+	/**
+	 * @param sequence
+	 *            the sequence to set
+	 */
 	public void setSequence(String sequence) {
 		this.sequence = sequence;
 	}
 
+	/**
+	 * @return the etno
+	 */
 	public String getEtno() {
 		return etno;
 	}
 
+	/**
+	 * @param etno
+	 *            the etno to set
+	 */
 	public void setEtno(String etno) {
 		this.etno = etno;
 	}
 
+	/**
+	 * @return the cno
+	 */
 	public String getCno() {
 		return cno;
 	}
 
+	/**
+	 * @param cno
+	 *            the cno to set
+	 */
 	public void setCno(String cno) {
 		this.cno = cno;
 	}
 
+	/**
+	 * @return the price
+	 */
 	public double getPrice() {
 		return price;
 	}
 
+	/**
+	 * @param price
+	 *            the price to set
+	 */
 	public void setPrice(double price) {
 		this.price = price;
 	}
 
+	/**
+	 * @return the airTax
+	 */
 	public double getAirTax() {
 		return airTax;
 	}
 
+	/**
+	 * @param airTax
+	 *            the airTax to set
+	 */
 	public void setAirTax(double airTax) {
 		this.airTax = airTax;
 	}
 
+	/**
+	 * @return the addFare
+	 */
 	public double getAddFare() {
 		return addFare;
 	}
 
+	/**
+	 * @param addFare
+	 *            the addFare to set
+	 */
 	public void setAddFare(double addFare) {
 		this.addFare = addFare;
 	}
 
+	/**
+	 * @return the charge
+	 */
 	public double getCharge() {
 		return charge;
 	}
 
+	/**
+	 * @param charge
+	 *            the charge to set
+	 */
 	public void setCharge(double charge) {
 		this.charge = charge;
 	}
 
+	/**
+	 * @return the totalRefund
+	 */
 	public double getTotalRefund() {
 		return totalRefund;
 	}
 
+	/**
+	 * @param totalRefund
+	 *            the totalRefund to set
+	 */
 	public void setTotalRefund(double totalRefund) {
 		this.totalRefund = totalRefund;
 	}

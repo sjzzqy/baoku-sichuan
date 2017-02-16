@@ -20,6 +20,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "Passenger")
 public class ApplyPassenger {
+	
 	@XmlElement(name = "Name")
 	private String name;
 	@XmlElement(name = "CertNo")

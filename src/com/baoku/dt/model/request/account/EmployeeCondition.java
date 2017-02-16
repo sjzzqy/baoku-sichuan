@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import com.baoku.dt.model.common.PageCondition;
 
-/**
+/**com.baoku.dt.model
  * @Description: TODO(....)
  * @author Allen
  * @version V1.0

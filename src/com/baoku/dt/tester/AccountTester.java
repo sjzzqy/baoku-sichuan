@@ -1,6 +1,5 @@
 package com.baoku.dt.tester;
 
-import com.baoku.dt.XmlUtils;
 import com.baoku.dt.model.common.Response;
 import com.baoku.dt.model.request.account.EmployeeCondition;
 import com.baoku.dt.model.result.account.Accounts;
@@ -17,7 +16,7 @@ public class AccountTester {
 	public static void main(String[] args) {
 		try {
 			EmployeeCondition condition = new EmployeeCondition();
-			condition.setCusBigCode("大客户编码");
+			condition.setCusBigCode("6BJ001");
 			AccountSevice service = new AccountSevice(condition);
 			Response<Accounts> result = service.request();
 			System.out.println(result);

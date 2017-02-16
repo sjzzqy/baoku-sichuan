@@ -174,4 +174,5 @@ public class CabinItem {
 	public void setClassLevel(String classLevel) {
 		this.classLevel = classLevel;
 	}
+
 }
