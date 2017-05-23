@@ -9,20 +9,21 @@ import com.baoku.dt.model.request.change.CreateCondition;
 import com.baoku.dt.model.request.change.Flight;
 import com.baoku.dt.model.request.change.QueryCondition;
 import com.baoku.dt.model.request.order.OrderCondition;
+import com.baoku.dt.model.result.AvResult;
 import com.baoku.dt.model.result.CreateOrderResult;
 import com.baoku.dt.model.result.change.ChangeResult;
 import com.baoku.dt.service.change.ChangeApplyService;
 import com.baoku.dt.service.change.CreateService;
 import com.baoku.dt.service.change.FlightService;
 
-public class ChangeTeseter {
+public class ChangeTester {
 
 	public static void main(String[] args) {
-		// TestChangeApply();
+		TestChangeApply();
 
-//		TestQueryFlights();
+		// TestQueryFlights();
 
-		 TestCreateOrder();
+		// TestCreateOrder();
 	}
 
 	static void TestQueryFlights() {
@@ -41,7 +42,7 @@ public class ChangeTeseter {
 			condition.setFlight(flights);
 			System.out.println(XmlUtils.objectToXml(condition));
 			FlightService service = new FlightService(condition);
-			Response<ChangeResult> result = service.request();
+			Response<AvResult> result = service.request();
 			System.out.println(XmlUtils.objectToXml(result));
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -53,7 +54,7 @@ public class ChangeTeseter {
 	static void TestChangeApply() {
 		try {
 			OrderCondition condition = new OrderCondition();
-			condition.setOrderNo("CF170214000001");
+			condition.setOrderNo("CF170401000001");
 			ChangeApplyService service = new ChangeApplyService(condition);
 			Response<ChangeResult> result = service.request();
 			System.out.println(XmlUtils.objectToXml(result));
